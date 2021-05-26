@@ -22,11 +22,33 @@ h1 {
   align-content: center;
 }
 
+a, a:visited{
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: italic;
+}
+
 .container {
-  width: 500px;
+  width: 700px;
   margin: 50px auto;
 }
 
+.grey_text{
+  color:rgba(200, 200, 200, 0.8)
+}
+.flex-wrap{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author-container>div>img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid red;
+}
 .container>h2 {
   margin: 20px 10px;
   font-family: 'Roboto', sans-serif;
@@ -47,21 +69,22 @@ h1 {
   color: rgba(255, 255, 255, 0.8);
 }
 
-a{
+.align-text-c{
+  text-align: center;
+}
+.container>a{
   font-size: 25px;
-  font-family: 'Josefin Sans', sans-serif;
-  font-style: italic;
   margin-left: 11px;
   letter-spacing: 1.5px;
   background-color: cyan;
   color:black;
-  text-decoration: none;
 }
 
-a:hover{
+.container>a:hover{
   background-color: mediumspringgreen;
-  font-size: 27px;
 }
+
+/* Media Queries */
 
 @media(max-width: 1200px) {
   .container {
